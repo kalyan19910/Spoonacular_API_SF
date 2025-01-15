@@ -1,0 +1,19 @@
+<template>
+    <div class ="form-container"> 
+        <label for = "name">Name: </label>
+        <input type = "text" id = "name" value = {name} oninput = {handleNameChange}></input>
+        
+        <label for = "feedback">Feedback: </label>
+        <textarea id = "feedback" value = {feedback} oninput = {handleFeedbackChange}></textarea>
+
+        <label for = "phone">Phone: </label>
+        <input type = "text" id = "phone" value = {phone} oninput = {handlePhoneChange}></input>
+    </div>
+
+    <div class = "preview-container">
+            <h2>****Preview****</h2>
+            <p><strong> Name: </strong>{name}</p>
+            <p><strong> Feedback: </strong>{feedback}</p>
+            <p><strong> Phone: </strong>{phone}</p>
+    </div>
+</template>
