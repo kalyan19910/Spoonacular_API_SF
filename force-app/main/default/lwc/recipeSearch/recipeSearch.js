@@ -17,7 +17,7 @@ export default class RecipeSearch extends LightningElement {
       });
   }
 
-  fetchRecipeByIngredients() {
+  fetchRecipesByIngredients() {
     const ingredients = this.template.querySelector(".ingredient-input").value;
     getRecipeByIngredients({ ingredients })
       .then((data) => {
